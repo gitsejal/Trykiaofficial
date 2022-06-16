@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS FILE-->
+    <link rel="stylesheet" href="/stylehome.css">
+    <!--fontawesome-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <title>Trykia | Cart</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><strong>TRYKIA</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="category.html">Category</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Check cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">Shop Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+<section class="cart py-5 my-5" id="cart">
+        <div class="container ">
+        <div class="section_title text-center mb-5">
+        <h1 class="text-capitalize">Cart</h1>
+        </div>
+        <div class="row bg_cart_1 rounded">
+        <!--Grid column-->
+        <div class="col-md-8 border-right">
+        <!-- Card -->
+        <div class="mb-3">
+        <div class="pt-4">
+        <h5 class="mb-4">Cart (<span>2</span> items)</h5>
+        <div class="row mb-4">
+        <div class="col-md-5 col-lg-3 col-xl-3">
+        <div class="rounded mb-3 mb-md-0">
+        <img class="img-fluid w-100 rounded"
+        src="assets/calender.jpg"
+        alt="Sample">
+        </div>
+        </div>
+        <div class="col-md-7 col-lg-9 col-xl-9">
+        <div>
+        <div class="d-flex justify-content-between">
+        <div>
+        <h5>Calender</h5>
+        <p class="mb-3 text-muted text-uppercase small">photo gift</p>
+        <p class="mb-2 text-muted text-uppercase small">Color:same</p>
+        <p class="mb-3 text-muted text-uppercase small">Size:8 inch</p>
+    </div>
+    <div>
+    <div class="mb-0 w-100">
+    <button
+    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+    class="btn btn-sm btn-outline-primary">
+    <i class="fas fa-minus"></i>
+    </button>
+    <input class="quantity text-center" min="0" max="10"
+    name="quantity"
+    value="1" type="number">
+    <button
+    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+    class="btn btn-sm btn-outline-primary">
+    <i class="fas fa-plus"></i>
+    </button>
+    </div>
+    <small class="form-text text-muted text-center">
+    (Note, 1 piece)
+    </small>
+    </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+    <div>
+    <a href="javascript:;" type="button"
+    class="small text-uppercase mr-3"><i
+    class="fas fa-trash-alt mr-1"></i> Remove item </a>
+    </div>
+    <p class="mb-0"><span><strong
+    id="summary">₹359</strong></span></p
+    class="mb-0">
+</div>
+</div>
+</div>
+</div>
+<hr class="mb-4">
+<div class="row mb-4">
+<div class="col-md-5 col-lg-3 col-xl-3">
+<div class="rounded mb-3 mb-md-0">
+<img class="img-fluid w-100 rounded"
+src="assets/moonlamp.jpg"
+alt="Sample">
+</div>
+</div>
+<div class="col-md-7 col-lg-9 col-xl-9">
+<div>
+<div class="d-flex justify-content-between">
+<div>
+<h5>Moon lamp</h5>
+<p class="mb-3 text-muted text-uppercase small">photo gift</p>
+<p class="mb-2 text-muted text-uppercase small">Color:
+white</p>
+<p class="mb-3 text-muted text-uppercase small">12 inch</p>
+</div>
+<div>
+<div class="mb-0 w-100">
+<button
+onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+class="btn btn-sm btn-outline-primary">
+<i class="fas fa-minus"></i>
+</button>
+<input class="quantity text-center" min="0" max="10"
+name="quantity"
+value="1" type="number">
+<button
+onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+class="btn btn-sm btn-outline-primary">
+<i class="fas fa-plus"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="d-flex justify-content-between align-items-center">
+<div>
+<a href="javascript:;" type="button"
+class="card-link-secondary small text-uppercase mr-3">
+<i class="fas fa-trash-alt mr-1"></i> Remove item
+</a>
+</div>
+<p class="mb-0"><span><strong>₹1089</strong></span></p
+class="mb-0">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Grid column-->
+<!--Grid column-->
+<div class="col-md-4 rounded">
+<!-- Card -->
+<div class="mb-3">
+<div class="pt-4">
+<h5 class="mb-3">Order summary</h5>
+<ul class="list-group list-group-flush">
+<li
+class="list-group-item d-flex justify-content-between
+align-items-center border-0 px-0 pb-2">
+<span>Calender</span>
+<span>x1</span>
+<span>₹359</span>
+</li>
+<li
+class="list-group-item d-flex justify-content-between
+align-items-center border-0 px-0 pb-2">
+<span>Moon Lamp</span>
+<span>x1</span>
+<span>₹1089</span>
+</li>
+<li
+class="list-group-item d-flex justify-content-between
+align-items-center border-top px-0 mb-3">
+<div>
+<strong>Total amount</strong>
+<strong>
+<p class="mb-0">(including VAT)</p>
+</strong>
+</div>
+<span><strong>₹1499</strong></span>
+</li>
+</ul>
+<a href="checkout.html" class="btn btn-primary btn-block">Go to
+Checkout</a>
+</div>
+</div>
+<!-- Card -->
+</div>
+<!--Grid column-->
+</div>
+</div>
+</section>
+<!-- ==============cart ends here============== -->
+    
+     <!-- =============footer starts here============== -->
+<div class="footer-clean">
+  <footer>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">Best Customisation</a></li>
+                      <li><a href="#">Quick service</a></li>
+                      <li><a href="#">Best Quality</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Legacy</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>Careers</h3>
+                  <ul>
+                      <li><a href="#">Job openings</a></li>
+                      <li><a href="#">Employee success</a></li>
+                      <li><a href="#">Benefits</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 item social"><a href="#"><i class="fab fa-facebook"></i></a><a href="https://instagram.com/trykiaofficial?utm_medium=copy_link"><i class="fab fa-instagram"></i></a><a href="https://instagram.com/trykiaofficial?utm_medium=copy_link"><i class="fab fa-twitter-square"></i></a><a href="https://instagram.com/trykiaofficial?utm_medium=copy_link"><i class="fab fa-whatsapp"></i></a>
+                  <p class="copyright">Trykia © 2021</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
