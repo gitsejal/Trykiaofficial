@@ -1,20 +1,116 @@
+
+html
+{
+    color: black;
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1,h2,h3,h4,h5,h6
+{
+    color: black;
+}
 body {
-    margin: 0;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: .8125rem;
-    font-weight: 400;
-    line-height: 1.5385;
-    color: #333;
-    text-align: left;
-    background-color: #2196F3
+  margin: 0;
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .8125rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+  text-align: left;
+  background-color: #ffdada;
+  background: url("/assets/img/pexels-晋欧-朱-2848289.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.start nav{
+  z-index: 1;
+  padding: 10px 15px;
+  position: fixed;
+  width: -webkit-fill-available;
+}
+nav .navbar-brand{
+  font-size: 1.6rem;
+  color: rgb(0, 0, 0) !important;
+}
+.navbar .nav-link{
+  font-size: 1rem;
+  color: rgb(61, 9, 9) !important;
+  /* margin-left: 1vw; */
+  margin-left: 15px;
+  margin-top: 2px;
+  transition: padding-top 250ms, color 250ms;
 }
 
-.mt-50 {
-    margin-top: 50px
+.navbar .nav-link:hover{
+  color: rgb(212, 117, 117) !important;
+  padding-top: 1px;
+  transition: 250ms;
+}
+.navbar-nav ul{
+  background-color: rgba(255, 200, 200, 0.384);
+  z-index: 2;
+  /* border:solid 1px rgb(0, 0, 0); */
+}
+.navbar-nav ul .dropdown-item{
+  color: rgb(39, 13, 13);
+  z-index: 2;
+}
+.navbar-nav ul .dropdown-item:hover{
+  color: rgb(47, 19, 19);
+  background-color: rgb(55, 157, 241);
+  z-index: 2;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+.mt-50{
+
+  margin-top: 0px;
 }
 
-.mb-50 {
-    margin-bottom: 50px
+.mb-50{
+
+  margin-bottom: 0px;
+}
+
+
+
+
+
+.star{
+      color: red;
+}
+
+.bg-cart {
+  background-color:orange;
+  color:#fff;
+}
+
+.bg-cart:hover {
+  
+  color:#fff;
+}
+
+.bg-buy {
+  background-color:green;
+  color:#fff;
+  padding-right: 29px;
+}
+.bg-buy:hover {
+  
+  color:#fff;
+}
+
+a{
+  color: #964343;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  font-weight:bold;
+
+  text-decoration: none !important;
 }
 
 .card {
@@ -32,7 +128,7 @@ body {
 }
 
 .card-img-actions {
-    position: relative
+    position: relative;
 }
 
 .card-body {
@@ -51,12 +147,12 @@ body {
 }
 
 .bg-cart {
-    background-color: orange;
-    color: #fff
+    background-color: rgb(255, 131, 131);
+    color: rgb(33, 7, 7)
 }
 
 .bg-cart:hover {
-    color: #fff
+    color: rgb(183, 0, 94)
 }
 
 .bg-buy {
@@ -72,33 +168,22 @@ body {
 a {
     text-decoration: none !important
 }
-html
-{
-    color: black;
-    
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-h1,h2,h3,h4,h5,h6
-{
-    color: black;
-}
+
 #headerP
 {
-  background: url("/assets/pexels-melissa-698907.jpg") coral;
-  background-position: center;
+  /* background: url("/assets/img/shopping\ bag.jpg") coral; */
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: cornsilk;
-  font-size: 90px;
-  width: 100%;
-  height: 200px;
+  background-attachment: fixed; */
+  color: rgb(55, 16, 16);
+  font-size: 80px;
   text-align:center;
-  padding-top: 50px;
+  padding-top: 0px;
 }
 @media only screen and (max-width: 400px){
   #headerP
   {
-    font-size: 60px;
+    font-size: 30px;
   }
 }
 
@@ -135,11 +220,22 @@ h1,h2,h3,h4,h5,h6
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(255, 91, 91, 0.5);
   max-width: 300px;
   margin: auto;
   text-align: center;
   font-family: arial;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgb(228, 199, 199);
+  background-clip: border-box;
+  border: 1px solid rgba(44, 0, 0, 0.581);
+  border-radius: .1875rem
 }
 
 .carousel 
@@ -221,12 +317,16 @@ h1,h2,h3,h4,h5,h6
     text-emphasis-color: transparent;
     -webkit-text-fill-color: transparent;
 }
-@media only screen and (max-width: 990px){
-    .serviceBox{ margin: 0 0 30px; }
-}
+
+  
+@media screen and (max-width: 600px) {
+    #feature {
+      width: 100%;
+    }
+  }
   .footer-clean {
     padding:50px 0;
-    background-color:rgb(94, 94, 94);
+    background-color:rgba(255, 168, 168, 0.897);
     color:#f9fbfc;
   }
   
@@ -310,11 +410,5 @@ h1,h2,h3,h4,h5,h6
     margin-bottom:0;
     font-size:13px;
     opacity:0.6;
-  }
-  
-@media screen and (max-width: 600px) {
-    #feature {
-      width: 100%;
-    }
   }
   

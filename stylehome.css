@@ -74,11 +74,11 @@ h1,h2,h3,h4,h5,h6
 }
 nav .navbar-brand{
   font-size: 1.6rem;
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 .navbar .nav-link{
   font-size: 1rem;
-  color: white !important;
+  color: rgb(31, 6, 6) !important;
   /* margin-left: 1vw; */
   margin-left: 15px;
   margin-top: 2px;
@@ -86,17 +86,17 @@ nav .navbar-brand{
 }
 
 .navbar .nav-link:hover{
-  color: rgb(55, 157, 241) !important;
+  color: rgb(255, 62, 194) !important;
   padding-top: 1px;
   transition: 250ms;
 }
 .navbar-nav ul{
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: rgba(255, 200, 200, 0.384);
   z-index: 2;
   /* border:solid 1px rgb(0, 0, 0); */
 }
 .navbar-nav ul .dropdown-item{
-  color: white;
+  color: rgb(4, 1, 1);
   z-index: 2;
 }
 .navbar-nav ul .dropdown-item:hover{
